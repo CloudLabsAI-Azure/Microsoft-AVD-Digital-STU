@@ -1,4 +1,4 @@
-# **Demo 1: AVD Login experience **
+# **Demo 1: AVD Login experience**
 
 
 ## **Task 1: Access the Published Applications and Desktop using Browser**
