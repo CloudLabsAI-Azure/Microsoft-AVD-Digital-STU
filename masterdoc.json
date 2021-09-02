@@ -1,0 +1,61 @@
+[
+  {
+    "Name": "Microsoft Digital STU AVD",
+    "Language": "English",
+    "Files": [
+	    {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo01.md",
+        "Order": 1
+      },
+  {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo02.md",
+        "Order": 2
+      },
+  {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo03.md",
+        "Order": 3
+      },
+  {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo04.md",
+        "Order": 4
+      },
+  {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo05.md",
+        "Order": 5
+      },
+  {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo06.md",
+        "Order": 6
+      },
+  {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo07.md",
+        "Order": 7
+      },
+  {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo08.md",
+        "Order": 8
+      },
+  {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo09.md",
+        "Order": 9
+      },
+  {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo10.md",
+        "Order": 10
+      },
+  {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo11.md",
+        "Order": 11
+      },
+  {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo12.md",
+        "Order": 12
+      },
+  {
+            "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/AVD-STU-DEMO/main/Demo13.md",
+            "Order": 13
+      }
+]
+  }
+  
+  ]
