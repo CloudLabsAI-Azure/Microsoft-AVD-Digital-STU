@@ -36,18 +36,22 @@ This should create the required Azure DevOps Organization for you.
 ```
 https://azuredevopsdemogenerator.azurewebsites.net/?name=secresearch
 ```
-7. On the next screen, Enter the **New Project Name** and Select the Organization, Click **Create Project**.
+7. Click **Accept** on the next screen
+
+![ws name.](media/img188.png)
+
+8. On the next screen, Enter the **New Project Name** and Select the Organization, Click **Create Project**.
 
 ![ws name.](media/img115.png)
 
-8. Wait for the Project to be created. Once done, Click on the **Navigate to project**
+9. Wait for the Project to be created. Once done, Click on the **Navigate to project**
 
 ![ws name.](media/img116.png)
 
-9. Hover over the **Boards** and then select **Work items**
+10. Hover over the **Boards** and then select **Work items**
 
 ![ws name.](media/img117.png)
 
-10. Here you can go through the Work items that can be used as a template for Secure Research Environment Setup.
+11. Here you can go through the Work items that can be used as a template for Secure Research Environment Setup.
 
 ![ws name.](media/img118.png)
