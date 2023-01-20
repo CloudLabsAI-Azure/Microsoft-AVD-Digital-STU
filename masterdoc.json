@@ -22,11 +22,8 @@
   {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/aser/Demo05.md",
         "Order": 5
-      },
-  {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/aser/Demo06.md",
-        "Order": 6
       }
+  
   
 ]
   }

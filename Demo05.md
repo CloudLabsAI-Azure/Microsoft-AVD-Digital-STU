@@ -1,36 +1,11 @@
-# **Demo 5: AVD Insights (Log Analytics)**
+# **Next Steps:**
 
-In This Demo we will be exploring Insigts on Azure Virtual Desktop
+For more information and resources, you can access the GitHub repo for Azure Secure Enclave for Research at below URL:
 
-## **Task 1: Accessing Insights**
+**- [The Azure Secure Enclave for Research](https://github.com/microsoft/Azure-Secure-Enclave-for-Research#the-azure-secure-enclave-for-research)**
 
-1. In Azure portal search for *Azure Virtual Desktop* and click on the search result.
+**- [Wiki](https://github.com/microsoft/Azure-Secure-Enclave-for-Research/wiki)**
 
-  ![ws name.](media/demo203.png)
-
-2. In the left panel of Azure Virtual Desktop, Click on **Insights**.
-
-  ![ws name.](media/demoin01.png)
-
->**Note:** It might take few seconds for Insights to fetch information.
-
-3. Under **Overview** tab explore the information displayed regarding Host pool and session hosts.
-
-  ![ws name.](media/demoin02.png)
-
-4. Under **Clients** tab explore how we can monitor the different clients, users and their activities.
-
-  ![ws name.](media/demoin03.png)
-
-5. Navigate to **Users** tab.
-
-  ![ws name.](media/demoin04.png)
-
-6. Enter name of a user in **UPN to search for** then press enter, verify the selected user from **Matching users** dropdown menu.
-
-  ![ws name.](media/demoin05.png)
-
-
-7. Under user page we can also monitor *Connection time by host* of the user.
-
-   ![ws name.](media/demoin06.png)
+For any Questions please Email us at: psm-cloudlabs@spektrasystems.com 
+OR 
+**- [Book a meeting with us](https://bit.ly/meet-cloudlabs)**
