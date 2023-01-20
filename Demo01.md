@@ -105,36 +105,22 @@ In this demo, we will access a sample data that is being stored on a secured Azu
 
 ![ws name.](media/img70.png)
 
->**Note:** If you are already logged in as the end user, jump to *step 3*.
+3. On the next window, under "Select Resource", Click **Storage account or service**.
 
-3. In AVD desktop client click on **Subscribe**.
+   ![ws name.](media/img71.png)
 
-   ![ws name.](media/img9.png)
+4. On the next window, under "How will you connect to the storage account?", Select **Connection string (Key or SAS)** and click **Next**.
 
-4. Enter the credentials as below:
+   ![ws name.](media/img72.png)
 
-   - Enter the username as below and click **Next**.
-       ```
-       Emma.4896@AVDDemo.com
-       ```
-   
+5. On the next window, under "Connection string", copy and paste the below string and click **Next**.
+>**Note:** The "Display name" will automatically fill once you paste the below string.
 
-   ![ws name.](media/img10.png)
-   
-   
-   - Enter the password <inject key="demo Admin Password" /> and click **Sign in**.
-   
+      ```
+      DefaultEndpointsProtocol=https;AccountName=aserstorageaccount;AccountKey=rK9u5A9a57NUMiuvxvDvnYJf+hQTO2KuVLk7AUJ1tjoB1m8hfGZ/q3d6a+n4e0JFWU+SHYhmBWVY+AStyovtKA==;EndpointSuffix=core.windows.net
+      ```
 
-   ![ws name.](media/img11.png)
-
-
->**Note:** If there's a dialog box with *More information required*, select **Skip for now option**.
->![ws name.](media/img3.png)
->
-
-5. The RemoteApps and the Workspace published to the logged in user will show up, click on **Excel** application to access it.
-
-   ![ws name.](media/img13.png)
+   ![ws name.](media/img73.png)
    
 
 6. Enter the credentials for *Emma.4896@AVDDemo.com* and click on **Submit**.
