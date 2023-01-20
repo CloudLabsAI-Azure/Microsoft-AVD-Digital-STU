@@ -81,13 +81,14 @@ In this demo, we will access the "Remote Desktop Connection" RemoteApp to connec
 
    ![ws name.](media/img67.png)
 
-8. Once signed in, the Remote Desktop Client will open. The App will be auto activated and Auto logged in using SSO.
+8. Once signed in, the Remote Desktop Client will open. You are now connected to the Desktop of the DSVM.
 
-   ![ws name.](media/img8.png)
+   ![ws name.](media/img68.png)
 
->**Talk through tip:**
->The first login does SSO in M365 App which also Activates M365 Apps based on the User License.
->On the above screen, if you notice the top right hand side corner; the user is already logged in using SSO.
+>**More Information:**
+>In this task, you have accessed the Remote Desktop Client which is being hosted from the Azure Virtual Desktop.
+>The Remote Desktop Client is then further connected to the DSVM, which is hosted as an independant VM on a seperate protected Virtual Network in Azure.
+>Azure Virtual Desktop in this case is acting as a Jump box to get into the DSVM.
 
 
 
