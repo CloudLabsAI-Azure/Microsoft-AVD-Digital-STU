@@ -33,3 +33,10 @@ odl_user_837245@azurehol1182.onmicrosoft.com
 6. Click on **Resource groups** as shown in the below screenshot:
 
 ![ws name.](media/img87.png)
+
+6. Here you will see the Resource Groups that have been created to deploy the Secure Research Environment.
+
+![ws name.](media/img90.png)
+
+7. The workloads are devided as per the below list:
+   - ss
