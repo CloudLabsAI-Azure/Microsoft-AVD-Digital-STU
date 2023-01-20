@@ -71,18 +71,13 @@ odl_user_837245@azurehol1182.onmicrosoft.com
 ```
 https://portal.azure.com
 ```
-![ws name.](media/img83.png)				
 
 3. Try to sign in into the portal using the below credentials.
 - Username:
 ```
 odl_user_837245@azurehol1182.onmicrosoft.com
 ```
-![ws name.](media/img84.png)	
-
 - Password: **<inject key="Demo Admin Password" />**
-
-![ws name.](media/img85.png)
 
 4. Now you will notice that the Sign in was succesfull, However, due to the Conditional Access Policies in place, the Azure Portal will not launch.
 
@@ -90,3 +85,4 @@ odl_user_837245@azurehol1182.onmicrosoft.com
 
 >**More Information:**
 >This validates that the Azure Portal can only be accessed when the connection is initiated from the designated DSVM.
+>Next, lets check the Azure deployments to understand the architecture of this Lab setup.
