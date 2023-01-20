@@ -26,45 +26,26 @@
  
 
    	![](media/gs04.png)
-   
-
-### **Below are the files you'll need to get started with your session:**
-
-**- ["Avddemo.com.vsdx" visio file can be downloaded from here](https://github.com/Eddevinc/AVD-STU-DEMO/raw/main/media/AVDDemo.com.vsdx)**
-
-**- ["Azure Virtual Desktop.pptx" powerpoint file can be downloaded from here](https://github.com/Eddevinc/AVD-STU-DEMO/raw/main/media/Azure%20Virtual%20Desktop.pptx)**
 
 
-
-# **Demo 1: AVD Login experience**
+# **Demo 1: AVD Login**
 
 
 ## **Task 1: Access the Published Applications using Browser**
 
-In this demo, we will access the Desktop and RemoteApps assigned to an end user using a browser.
-
-
-**Talk through tip:**
-   **Mention to the audience:**
- - The user is signing in for the first time.  
- - All the user’s starting with **‘E’** in their first name belongs to **East US** region. 
- - All the user’s starting with **‘C’** in their first name belongs to **Central US** region.
- - All the users are licensed with M365 License
- - All the users have their password set to: <inject key="demo Admin Password" />
+In this demo, we will access the "Remote Desktop Connection" RemoteApp to connect to the Data Science Virtual Machine (DSVM).
 
 1. Open the below URL for Remote Desktop Web Client in a new browser tab on the JumpVM or your computer. 
       ```
       https://aka.ms/wvdarmweb
       ```
 
-   >**Note:** If you are already logged in as the end user, jump to *step 3*.
 
 2. Enter the credentials as below:
 
    - Enter the username as below and click **Next**.
-       ```
-       Emma.4896@AVDDemo.com
-       ```   
+   
+   **<inject key="AzureAdUserEmail" />**  
 
    ![ws name.](media/img10.png)
    
