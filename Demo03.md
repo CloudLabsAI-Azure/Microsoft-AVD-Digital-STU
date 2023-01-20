@@ -1,9 +1,7 @@
 # **Demo 3: General walk through of Azure Resources (Demo)**
 
-## **Networking and Azure Active Directory Domain Services overview**
-
 >**More Information:**
->In this demo, we will walk through the Azure networking and Active Directory Domain Services setup.
+>In this demo, we will walk through the Azure resources that are setup for this Secure Research Environment.
 
 1. Connect to the Desktop of the DSVM if not already connected.
 
@@ -79,10 +77,34 @@ odl_user_837245@azurehol1182.onmicrosoft.com
 
 ![ws name.](media/img93.png)
 
-13. Next, Search for **Storage** in Azure Portal search:
+13. Next, Search for **Azure Active Directory** in Azure Portal search and navigate to it.
 
 ![ws name.](media/img94.png)
 
-14. Click on **aserstorageaccount**
+14. Click on **Security**
 
-![ws name.](media/img95.png)
+![ws name.](media/img96.png)
+
+15. Under Security, Click on **Conditional Access**
+
+![ws name.](media/img97.png)
+
+16. Here you will find the Policy that was setup to allow Azure Portal Access only from the DSVM.
+
+![ws name.](media/img98.png)
+
+17. For the blocking control to work, the DSVM has been assigned a static Public IP that is used for Outbound Internet. The same Public IP is being used in the Conditional Access Policy. Lets review how it is configured.
+
+   - Click on **Named locations**  and select **DSVM** to find out which Public IP is added as trusted location.
+   ![ws name.](media/img100.png)
+
+   - Here you will notice the IP addresses that is being added:
+   ![ws name.](media/img101.png)
+
+18. Next, Lets check the Conditional Access Policy and it's Configurations:
+
+   - Select **Allow Azure Portal only from DSVM** policy
+   ![ws name.](media/img102.png)
+
+   - Select **1 condition selected** under **Conditions**, Here you will notice that under **Locations**, **Any location** is *Included* but the **DSVM** named location is *Excluded*. The Grant Control is set as "Block access". This policy ensures that Any Inbound access request is blocked unless it is coming from the DSVM's Public IP.
+   ![ws name.](media/img104.png)
