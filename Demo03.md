@@ -39,4 +39,20 @@ odl_user_837245@azurehol1182.onmicrosoft.com
 ![ws name.](media/img90.png)
 
 7. The workloads are devided as per the below list:
-   - ss
+   - Secure-Enclave-AADDS-RG
+      This RG contains the Azure Active Directory Domain Services to support Identity and Authentication.
+
+   - Secure-Enclave-AVD-avd
+      This RG contains the Azure Virtual Desktop resources.
+
+   - Secure-Enclave-AVD-deployment
+      This RG contains the Azure Virtual Desktop deployment Automation scripts.
+
+   - Secure-Enclave-AVD-RG
+      This RG contains the Azure Virtual Desktop Virtual Network.
+
+   - Secure-Enclave-DSVM-RG
+      This RG contains the DSVM and it's Network.
+
+   - Secure-Enclave-DSVM-RG
+      This RG contains the DSVM and it's Network.
