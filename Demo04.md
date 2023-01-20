@@ -9,8 +9,6 @@ To help you with the process of deploying research environments, refer to the "S
 https://go.microsoft.com/fwlink/?LinkId=307137
 ```
 
-![ws name.](media/img108.png)
-
 2. For signing in, You can either use the account provided in this lab or you can use your own Microsoft 365 / Azure AD user account.
 
 3. Enter the Username for the ODL User (Lab User)
