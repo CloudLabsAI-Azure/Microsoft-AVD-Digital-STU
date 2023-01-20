@@ -30,7 +30,6 @@
 
 # **Demo 1: AVD Login**
 
-
 ## **Task 1: Access the Published Applications using Browser**
 
 In this demo, we will access the "Remote Desktop Connection" RemoteApp to connect to the Data Science Virtual Machine (DSVM).
@@ -45,7 +44,7 @@ In this demo, we will access the "Remote Desktop Connection" RemoteApp to connec
 
    - Enter the username as below and click **Next**.
        ```
-       Emma.4896@AVDDemo.com
+       odl_user_840544@azurehol1182.onmicrosoft.com
        ```   
 
    ![ws name.](media/img10.png)
@@ -59,19 +58,18 @@ In this demo, we will access the "Remote Desktop Connection" RemoteApp to connec
    >**Note:** If there's a dialog box with *More information required*, select **Skip for now option**.
    >![ws name.](media/img3.png)
 
->**Talk through tip:**
-> Mention to the audience that the AVD environment is configured to enforce MFA, but for the demo purposes we have allowed the option to Skip the MFA setup for maximum of 14 days.
 
-
-3. The RemoteApps and the Workspace published to the logged in user will show up, click on **Excel** application to access it.
+3. The RemoteApps and the Workspace published to the logged in user will show up, click on **Remote Desktop Connection** application to access it.
 
    ![ws name.](media/img4.png)
+
+   This will launch a Remote Desktop Connection Client that we will use to remotely connect to the Data Science Virtual Machine (DSVM).
    
 4. Select **Allow** on the prompt asking permission to *Access local resources*.
 
    ![ws name.](media/img5.png)
    
-5. Enter the credentials for **Emma.4896@AVDDemo.com** and click on **Submit**.
+5. Enter the credentials for **odl_user_840544@azurehol1182.onmicrosoft.com** and click on **Submit**.
 
    ![ws name.](media/img6.png)
 
