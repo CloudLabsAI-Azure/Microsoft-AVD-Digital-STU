@@ -6,25 +6,13 @@
 
 2. You will have the **Environment Details** tab located next to the *Lab Guide* tab that will provide you details such as Username, Password for your user.
 
-   ![](media/gs02.png)	
-   
-3. Next to _Environment Details_ tab you will have **Resources** tab which will display the status of all the Virtual Machines available in your environment. 
+   ![](media/gs02.png)
 
-   ![](media/gs05.png)	
-
-4. You will also have a set of **Actions** to control the Virtual Machines. The _Actions_ are as follows:
-	
-	* **Start:** Use this button to _Start_ a virtual machine.
-	* **Restart:** Use this button to _Restart_ a virtual machine.
-	* **Stop:** Use this button to _Deallocate_ a virtual machine.
-   
-   
-   ![](media/gs03.png)	
  
- 5. At last, you will have **Help** tab in which we have listed known issues such as Unable to copy paste, Need credentials and much more. In case if you face any of these issues, you can troubleshoot it by following the instructions given there.
+3. You will also have **Help** tab in which we have listed known issues such as Unable to copy paste, Need credentials and much more. In case if you face any of these issues, you can troubleshoot it by following the instructions given there.
  
 
-   	![](media/gs04.png)
+   ![](media/gs04.png)
 
 
 **What is the Azure Secure Enclave for Research?**
