@@ -28,9 +28,9 @@
    	![](media/gs04.png)
 
 
-# **Demo 1: AVD Login**
+# **Demo 1: Accessing secure data from the DSVM through Azure Virtual Desktop**
 
-## **Task 1: Access the Published Applications using Browser**
+## **Task 1: Access the Published DSVM Remote Desktop using Browser**
 
 In this demo, we will access the "Remote Desktop Connection" RemoteApp to connect to the Data Science Virtual Machine (DSVM).
 
@@ -153,6 +153,63 @@ In this demo, we will access a sample data that is being stored on a secured Azu
 
    ![ws name.](media/img78.png)
 
+3. Enter the credentials.
+
+   ![ws name.](media/img79.png)
+
+4. On the next pop-up, Enter the credentials again and select the check box next to **Remember me**. This will avoid any future prompts.
+
+   ![ws name.](media/img66.png)
+
+5. On the next pop-up, select the check box next to **Don't ask me again for connections to this computer** and Click **Yes**. This will avoid any future prompts.
+
+   ![ws name.](media/img67.png)
+
+6. Once signed in, the Desktop of the Azure Virtual Desktop's Session host will open. You are now connected to the Desktop of the AVD.
+
+   ![ws name.](media/img80.png)
+
+7. Now click on the **START** button and search for **Microsoft Azure Storage Explorer**. Launch the Azure Storage Explorer.
+
+   ![ws name.](media/img81.png)
+
+8. Click **Attach to a resource** once the Azure Storage Explorer is launched.
+
+   ![ws name.](media/img70.png)
+
+9. On the next window, under "Select Resource", Click **Storage account or service**.
+
+   ![ws name.](media/img71.png)
+
+10. On the next window, under "How will you connect to the storage account?", Select **Connection string (Key or SAS)** and click **Next**.
+
+   ![ws name.](media/img72.png)
+
+11. On the next window, under "Connection string", copy and paste the below string and click **Next**.
+>**Note:** The "Display name" will automatically fill once you paste the below string.
+
+      ```
+      DefaultEndpointsProtocol=https;AccountName=aserstorageaccount;AccountKey=rK9u5A9a57NUMiuvxvDvnYJf+hQTO2KuVLk7AUJ1tjoB1m8hfGZ/q3d6a+n4e0JFWU+SHYhmBWVY+AStyovtKA==;EndpointSuffix=core.windows.net
+      ```
+
+   
+   ![ws name.](media/img73.png)   
+
+12. On the next screen click on **Connect**.
+
+   ![ws name.](media/img74.png)
+
+13. Now you will see the **aserstorageaccount (Key)** being added to the list. 
+
+   ![ws name.](media/img75.png)
+
+8. You can now expand the **aserstorageaccount** > **Blob Containers**. However you will notice that the connection is denied. 
+
+   ![ws name.](media/img82.png)
+
+>**More Information:**
+>In this task, you tried to access the same sample data that was accessible from the DSVM / DSVM Virtual Network, However because of the restrictions on the Azure Virtual Network, the access was denied.
+>This validates that access to the secure data can be restricted to a specific Virtual Network or a specific VM.
 
 
 
