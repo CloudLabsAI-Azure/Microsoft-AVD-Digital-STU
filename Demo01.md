@@ -129,6 +129,17 @@ In this demo, we will access a sample data that is being stored on a secured Azu
 7. Once the connection is made, you will see the **aserstorageaccount (Key)** being added to the list. 
 
    ![ws name.](media/img75.png)
+
+
+
+
+
+
+
+
+
+
+   
    
 ## **Task 3: Access the Published Desktops using Browser**
 
