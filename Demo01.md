@@ -73,7 +73,15 @@ In this demo, we will access the "Remote Desktop Connection" RemoteApp to connec
 
    ![ws name.](media/img6.png)
 
-6. Once signed in, the M365 App will open. The App will be auto activated and Auto logged in using SSO.
+6. On the next pop-up, Enter the credentials again and select the check box next to **Remember me**. This will avoid any future prompts.
+
+   ![ws name.](media/img66.png)
+
+7. On the next pop-up, select the check box next to **Don't ask me again for connections to this computer** and Click **Yes**. This will avoid any future prompts.
+
+   ![ws name.](media/img67.png)
+
+8. Once signed in, the Remote Desktop Client will open. The App will be auto activated and Auto logged in using SSO.
 
    ![ws name.](media/img8.png)
 
