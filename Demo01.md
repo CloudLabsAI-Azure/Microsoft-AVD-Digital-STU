@@ -1,18 +1,5 @@
 # **User Guide: The Secure Research Environment**
 
-**What is the Azure Secure Enclave for Research?**
-
-The Secure Enclave for Research (also known as the Secure Research Enclave) is a reference architecture for a remotely-accessible environment for researchers to use in a secure manner while working on restricted data sets. The solution features robust mechanisms for control over user access to the environment and also over movement of data in or out of scope for analysis so it is ideal for working with restricted data sets. Data in the environment can be analyzed with traditional VMs using Windows or Linux with well-known tools such as R Studio and also supports the use of advanced analytical tools such as Azure Machine Learning.
-
-The solution is built using multiple Azure services including Azure Virtual Desktop to provide strong control over data movement into and out of the environment in order to prevent unauthorized exfiltraction of data sets.
-
-In this Demo Lab we are going to work with a smaple Secure Research Environment and go over the deployment configurations used in this Lab.
-
-Before we begin, Lets go over the architecture of this Demo Lab.
-
-This architecture shows a secure research environment intended to allow researchers to access sensitive data under a higher level of control and data protection. This article is applicable for organizations that are bound by regulatory compliance or other strict security requirements.
-
-
 1. Once you launch the lab, a virtual machine (JumpVM) on the left and lab guide on the right will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.	
 
    ![](media/gs06.png)	
@@ -38,6 +25,21 @@ This architecture shows a secure research environment intended to allow research
  
 
    	![](media/gs04.png)
+
+
+**What is the Azure Secure Enclave for Research?**
+
+The Secure Enclave for Research (also known as the Secure Research Enclave) is a reference architecture for a remotely-accessible environment for researchers to use in a secure manner while working on restricted data sets. The solution features robust mechanisms for control over user access to the environment and also over movement of data in or out of scope for analysis so it is ideal for working with restricted data sets. Data in the environment can be analyzed with traditional VMs using Windows or Linux with well-known tools such as R Studio and also supports the use of advanced analytical tools such as Azure Machine Learning.
+
+The solution is built using multiple Azure services including Azure Virtual Desktop to provide strong control over data movement into and out of the environment in order to prevent unauthorized exfiltraction of data sets.
+
+In this Demo Lab we are going to work with a smaple Secure Research Environment and go over the deployment configurations used in this Lab.
+
+Before we begin, Lets go over the architecture of this Demo Lab.
+
+This architecture shows a secure research environment intended to allow researchers to access sensitive data under a higher level of control and data protection. This article is applicable for organizations that are bound by regulatory compliance or other strict security requirements.
+
+![ws name.](media/img119.png)
 
 
 # **Demo 1: Accessing secure data from the DSVM through Azure Virtual Desktop**
