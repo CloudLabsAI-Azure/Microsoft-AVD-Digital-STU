@@ -12,13 +12,12 @@ https://portal.azure.com
 ![ws name.](media/img83.png)				
 
 3. Sign in into the portal using the below credentials.
-- Username:
-```
-odl_user_837245@azurehol1182.onmicrosoft.com
-```
+
+   - Enter the username **<inject key="azureaduseremail" />**
+
 ![ws name.](media/img84.png)	
 
-- Password: **<inject key="Demo Admin Password" />**
+   - Enter the password **<inject key="azureaduserpassword" />**
 
 ![ws name.](media/img85.png)
 
@@ -37,22 +36,22 @@ odl_user_837245@azurehol1182.onmicrosoft.com
 ![ws name.](media/img90.png)
 
 8. The workloads are devided as per the below list:
-   - Secure-Enclave-AADDS-RG
+   - **Secure-Enclave-AADDS-RG**
       This RG contains the Azure Active Directory Domain Services to support Identity and Authentication.
 
-   - Secure-Enclave-AVD-avd
+   - **Secure-Enclave-AVD-avd**
       This RG contains the Azure Virtual Desktop resources.
 
-   - Secure-Enclave-AVD-deployment
+   - **Secure-Enclave-AVD-deployment**
       This RG contains the Azure Virtual Desktop deployment Automation scripts.
 
-   - Secure-Enclave-AVD-RG
+   - **Secure-Enclave-AVD-RG**
       This RG contains the Azure Virtual Desktop Virtual Network.
 
-   - Secure-Enclave-DSVM-RG
+   - **Secure-Enclave-DSVM-RG**
       This RG contains the DSVM and it's Network.
 
-   - Secure-Enclave-Storage-RG
+   - **Secure-Enclave-Storage-RG**
       This RG contains the Secured data in an Azure Storage Account.
 
 9. Next, Search for Virtual Networks in Azure Portal's search bar:
@@ -64,13 +63,13 @@ odl_user_837245@azurehol1182.onmicrosoft.com
 ![ws name.](media/img92.png)
 
 11. The workloads are devided as per the below list:
-   - Secure-Enclave-AADDS-vNet
+   - **Secure-Enclave-AADDS-vNet**
       This vNet contains the Azure Active Directory Domain Services to support Identity and Authentication.
 
-   - Secure-Enclave-AVD-vNet
+   - **Secure-Enclave-AVD-vNet**
       This vNet contains the Azure Virtual Desktop Session Hosts.
    
-   - Secure-Enclave-DSVM-vNet
+   - **Secure-Enclave-DSVM-vNet**
       This vNet contains the DSVM.
 
 12. Click on **Secure-Enclave-DSVM-vNet** > **Peerings**. Here you will find the vNet peerings that have been setup so that all the Virtual Networks can communicate with each other.

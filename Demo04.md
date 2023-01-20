@@ -13,9 +13,13 @@ https://go.microsoft.com/fwlink/?LinkId=307137
 
 3. Enter the Username for the ODL User (Lab User)
 
+    - Enter the username **<inject key="azureaduseremail" />** and click **Next**.   
+
 ![ws name.](media/img109.png)
 
-4. Enter the password and **Sign In**
+4. Enter the password 
+
+    - Enter the password **<inject key="azureaduserpassword" />** and click **Sign in**
 
 ![ws name.](media/img110.png)
 
