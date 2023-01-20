@@ -66,11 +66,16 @@ In this demo, we will access the "Remote Desktop Connection" RemoteApp to connec
 
    ![ws name.](media/img5.png)
    
-5. Enter the credentials for **odl_user_840544@azurehol1182.onmicrosoft.com** and click on **Submit**.
+5. Enter the credentials.
+
+   - Enter the username **<inject key="azureaduseremail" />**
+   - Enter the password **<inject key="azureaduserpassword" />** and click **Submit**
 
    ![ws name.](media/img6.png)
 
 6. On the next pop-up, Enter the credentials again and select the check box next to **Remember me**. This will avoid any future prompts.
+
+   - Enter the password **<inject key="azureaduserpassword" />**
 
    ![ws name.](media/img66.png)
 
