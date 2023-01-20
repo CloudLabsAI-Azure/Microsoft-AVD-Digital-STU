@@ -1,34 +1,35 @@
 # **Demo 3: General walk through of Azure Resources (Demo)**
 
-## **Networking and Domain Controllers overview**
+## **Networking and Azure Active Directory Domain Services overview**
 
-In this demo, we will walk through the Azure networking and Domain Controller setup.
+>**More Information:**
+>In this demo, we will walk through the Azure networking and Active Directory Domain Services setup.
 
-   - Use below credentials to access Azure Portal:
-      - UserName:
-         ```
-         AVDPresentor01@AVDDemo.com
-         ```
-      - Password:  <inject key="demo Admin Password" />  
+1. Connect to the Desktop of the DSVM if not already connected.
 
-**Talk through**   
- - For this Demo, we have deployed two Domain Controllers; one in East US and one in Central US.
- - A VM Running Azure Connect application is Syncing Active Directory with Azure Active Directory.
+2. Launch Edge browser and navigate to Azure Portal using following URL. You can either use the Shortcut on the desktop or the Edge icon on the taskbar:     
+```
+https://portal.azure.com
+```
+![ws name.](media/img83.png)				
 
-![ws name.](media/img31.png)
+3. Sign in into the portal using the below credentials.
+- Username:
+```
+odl_user_837245@azurehol1182.onmicrosoft.com
+```
+![ws name.](media/img84.png)	
 
-- There are 2 vNets deployed in Azure, one in East and one in Central region.
+- Password: **<inject key="Demo Admin Password" />**
 
-![ws name.](media/img32.png)
+![ws name.](media/img85.png)
 
-- These vNets are connected to each other using vNet Peering.
+4. Select **Skip for now (14 days until this is required)**.
 
-![ws name.](media/img33.png)
+![ws name.](media/img86.png)
 
-- Both the vNets are configured to use the IP addresses of the Domain Controllers as DNS Servers.   
-   
-![ws name.](media/img34.png)
+5. You will now be logged into the Azure Management Portal.
 
-- Each vNet has its dedicated Subnet for AVD.
+6. Click on **Resource groups** as shown in the below screenshot:
 
-![ws name.](media/img35.png)
+![ws name.](media/img87.png)
