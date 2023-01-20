@@ -13,16 +13,16 @@
 ```
 https://portal.azure.com
 ```
+
 ![ws name.](media/img83.png)				
 
 3. Sign in into the portal using the below credentials.
-- Username:
-```
-odl_user_837245@azurehol1182.onmicrosoft.com
-```
+
+   - Enter the username **<inject key="azureaduseremail" />** and click **Next**.   
+
 ![ws name.](media/img84.png)	
 
-- Password: **<inject key="Demo Admin Password" />**
+   - Enter the password **<inject key="azureaduserpassword" />** and click **Sign in**.
 
 ![ws name.](media/img85.png)
 
@@ -53,10 +53,14 @@ odl_user_837245@azurehol1182.onmicrosoft.com
 
 3. Enter the credentials.
 
+   - Enter the password **<inject key="azureaduserpassword" />** and click **Submit**
+
    ![ws name.](media/img79.png)
 
 4. On the next pop-up, Enter the credentials again and select the check box next to **Remember me**. This will avoid any future prompts.
 
+   - Enter the password **<inject key="azureaduserpassword" />** and click **OK**
+   
    ![ws name.](media/img66.png)
 
 5. Once signed in, the Desktop of the Azure Virtual Desktop's Session host will open. You are now connected to the Desktop of the AVD.
@@ -72,14 +76,12 @@ odl_user_837245@azurehol1182.onmicrosoft.com
 https://portal.azure.com
 ```
 
-3. Try to sign in into the portal using the below credentials.
-- Username:
-```
-odl_user_837245@azurehol1182.onmicrosoft.com
-```
-- Password: **<inject key="Demo Admin Password" />**
+8. Try to sign in into the portal using the below credentials.
 
-4. Now you will notice that the Sign in was succesfull, However, due to the Conditional Access Policies in place, the Azure Portal will not launch.
+   - Enter the username **<inject key="azureaduseremail" />**
+   - Enter the password **<inject key="azureaduserpassword" />**
+
+9. Now you will notice that the Sign in was succesfull, However, due to the Conditional Access Policies in place, the Azure Portal will not launch.
 
 ![ws name.](media/img89.png)
 

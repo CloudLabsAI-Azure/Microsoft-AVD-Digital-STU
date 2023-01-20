@@ -158,9 +158,14 @@ In this demo, we will access a sample data that is being stored on a secured Azu
 
 3. Enter the credentials.
 
+   - Enter the username **<inject key="azureaduseremail" />**
+   - Enter the password **<inject key="azureaduserpassword" />** and click **Submit**
+
    ![ws name.](media/img79.png)
 
 4. On the next pop-up, Enter the credentials again and select the check box next to **Remember me**. This will avoid any future prompts.
+
+   - Enter the password **<inject key="azureaduserpassword" />**
 
    ![ws name.](media/img66.png)
 
