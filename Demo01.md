@@ -92,18 +92,18 @@ In this demo, we will access the "Remote Desktop Connection" RemoteApp to connec
 >We are going to use this DSVM to access the tools and data is only accessible from this secured VM.
 
 
-## **Task 2: Access the Published Applications using AVD Client**
+## **Task 2: Access the Sample data from restricted Azure Storage Account**
 
-In this demo, we will access the Desktop and RemoteApps assigned to an end user using a AVD Client.
+In this demo, we will access a sample data that is being stored on a secured Azure storage account. We will be using Azure Storage Explorer that is already installed on the DSVM.
 
 
-1. Download and Install the AVD Client on your JumpVM; use below URL:
+1. From the DSVM, Launch the Azure Storage Explorer from the task bar as shown below:
 
-```
-https://go.microsoft.com/fwlink/?linkid=2068602
-```
+![ws name.](media/img69.png)
 
-2. Launch AVD Client on your JumpVM.
+2. Click **Attach to a resource** once the Azure Storage Explorer is launched.
+
+![ws name.](media/img70.png)
 
 >**Note:** If you are already logged in as the end user, jump to *step 3*.
 
