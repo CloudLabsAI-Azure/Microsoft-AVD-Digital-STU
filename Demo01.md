@@ -1,4 +1,4 @@
-# **Getting Started**
+# **User Guide: The Secure Research Environment**
 
 
 1. Once you launch the lab, a virtual machine (JumpVM) on the left and lab guide on the right will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.	
@@ -60,11 +60,10 @@ In this demo, we will access the "Remote Desktop Connection" RemoteApp to connec
 
 
 3. The RemoteApps and the Workspace published to the logged in user will show up, click on **Remote Desktop Connection** application to access it.
+   This will launch a Remote Desktop Connection Client that we will use to remotely connect to the Data Science Virtual Machine (DSVM).
 
    ![ws name.](media/img4.png)
-
-   This will launch a Remote Desktop Connection Client that we will use to remotely connect to the Data Science Virtual Machine (DSVM).
-   
+      
 4. Select **Allow** on the prompt asking permission to *Access local resources*.
 
    ![ws name.](media/img5.png)
