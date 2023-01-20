@@ -98,10 +98,10 @@ odl_user_837245@azurehol1182.onmicrosoft.com
    - Click on **Named locations**  and select **DSVM** to find out which Public IP is added as trusted location.
    ![ws name.](media/img100.png)
 
-   - Here you will notice the IP addresses that is being added:
+   - Here you will notice the IP addresses that is being added.
    ![ws name.](media/img101.png)
 
-18. Next, Lets check the Conditional Access Policy and it's Configurations:
+18. Next, Lets check the Conditional Access Policy and it's Configurations.
 
    - Select **Allow Azure Portal only from DSVM** policy
    ![ws name.](media/img102.png)
