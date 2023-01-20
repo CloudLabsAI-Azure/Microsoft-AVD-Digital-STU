@@ -130,6 +130,28 @@ In this demo, we will access a sample data that is being stored on a secured Azu
 
    ![ws name.](media/img75.png)
 
+8. You can now expand the **aserstorageaccount** > **Blob Containers** > **aserdata** and Download the sample data by clicking on the **Download All...** as shown in the screenshot   below. You can save the data anywhere on the C: drive. 
+
+   ![ws name.](media/img76.png)
+
+>**More Information:**
+>In this task, you have accessed the sample data which can be downloaded locally to perform any actions for research.
+>There are no further steps required.
+>Next, we will try to access this same data from anyother VM which should result in an inability to access the data because the data is only supposed to be accessible from the DSVM and no where else.
+
+## **Task 3: Try to access the Sample data from Azure Virtual Desktop (non-DSVM negative test)**
+
+1. Navigate back to the Azure Virtual Desktop web client. Click on **All Resources** and launch **Session Desktop** as shown in the screenshot below:
+
+   ![ws name.](media/img77.png)
+
+>**More Information:**
+>This will launch a Remote Desktop Connection to the Azure Virtual Desktop which is a different VM than the DSVM.
+>Azure Virtual Desktop is connected to a seperate Virtual Network.
+
+2. Click **Allow**
+
+   ![ws name.](media/img78.png)
 
 
 
