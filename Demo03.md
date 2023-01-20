@@ -34,11 +34,11 @@ odl_user_837245@azurehol1182.onmicrosoft.com
 
 ![ws name.](media/img87.png)
 
-6. Here you will see the Resource Groups that have been created to deploy the Secure Research Environment.
+7. Here you will see the Resource Groups that have been created to deploy the Secure Research Environment.
 
 ![ws name.](media/img90.png)
 
-7. The workloads are devided as per the below list:
+8. The workloads are devided as per the below list:
    - Secure-Enclave-AADDS-RG
       This RG contains the Azure Active Directory Domain Services to support Identity and Authentication.
 
@@ -54,5 +54,35 @@ odl_user_837245@azurehol1182.onmicrosoft.com
    - Secure-Enclave-DSVM-RG
       This RG contains the DSVM and it's Network.
 
-   - Secure-Enclave-DSVM-RG
-      This RG contains the DSVM and it's Network.
+   - Secure-Enclave-Storage-RG
+      This RG contains the Secured data in an Azure Storage Account.
+
+9. Next, Search for Virtual Networks in Azure Portal's search bar:
+
+![ws name.](media/img91.png)
+
+10. Here, you will see the Virtual Networks created for this Secure Research Environment.
+
+![ws name.](media/img92.png)
+
+11. The workloads are devided as per the below list:
+   - Secure-Enclave-AADDS-vNet
+      This vNet contains the Azure Active Directory Domain Services to support Identity and Authentication.
+
+   - Secure-Enclave-AVD-vNet
+      This vNet contains the Azure Virtual Desktop Session Hosts.
+   
+   - Secure-Enclave-DSVM-vNet
+      This vNet contains the DSVM.
+
+12. Click on **Secure-Enclave-DSVM-vNet** > **Peerings**. Here you will find the vNet peerings that have been setup so that all the Virtual Networks can communicate with each other.
+
+![ws name.](media/img93.png)
+
+13. Next, Search for **Storage** in Azure Portal search:
+
+![ws name.](media/img94.png)
+
+14. Click on **aserstorageaccount**
+
+![ws name.](media/img95.png)
