@@ -113,5 +113,19 @@ odl_user_837245@azurehol1182.onmicrosoft.com
    
    ![ws name.](media/img104.png)
 
+19. Next, lets look at the DSVM and confirm what Public IP it is using
+
+   - Search and launch **Virtual Machines** from the Azure Portal's search bar 
+   
+   ![ws name.](media/img105.png)
+
+   - Click on the **DSVM**
+
+   ![ws name.](media/img106.png)
+
+   - Notice the Public IP address for the DSVM
+
+   ![ws name.](media/img107.png)
+
 >**More Information:**
 >In this walkthrough, we have explored the basics of how this Secure reasearch Environment is setup.
