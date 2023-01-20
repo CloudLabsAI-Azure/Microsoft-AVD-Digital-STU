@@ -37,15 +37,16 @@ In this demo, we will access the "Remote Desktop Connection" RemoteApp to connec
 
 1. Open the below URL for Remote Desktop Web Client in a new browser tab on the JumpVM or your computer. 
       ```
-      https://aka.ms/wvdarmweb
+      https://aka.ms/avdwebarm
       ```
 
 
 2. Enter the credentials as below:
 
    - Enter the username as below and click **Next**.
-   
-   **<inject key="AzureAdUserEmail" />**  
+       ```
+       Emma.4896@AVDDemo.com
+       ```   
 
    ![ws name.](media/img10.png)
    
