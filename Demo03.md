@@ -108,3 +108,6 @@ odl_user_837245@azurehol1182.onmicrosoft.com
 
    - Select **1 condition selected** under **Conditions**, Here you will notice that under **Locations**, **Any location** is *Included* but the **DSVM** named location is *Excluded*. The Grant Control is set as "Block access". This policy ensures that Any Inbound access request is blocked unless it is coming from the DSVM's Public IP.
    ![ws name.](media/img104.png)
+
+>**More Information:**
+>In this walkthrough, we have explored the basics of how this Secure reasearch Environment is setup.
