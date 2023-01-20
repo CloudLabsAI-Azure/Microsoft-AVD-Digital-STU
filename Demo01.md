@@ -89,7 +89,7 @@ In this demo, we will access the "Remote Desktop Connection" RemoteApp to connec
 >In this task, you have accessed the Remote Desktop Client which is being hosted from the Azure Virtual Desktop.
 >The Remote Desktop Client is then further connected to the DSVM, which is hosted as an independant VM on a seperate protected Virtual Network in Azure.
 >Azure Virtual Desktop in this case is acting as a Jump box to get into the DSVM.
-
+>We are going to use this DSVM to access the tools and data is only accessible from this secured VM.
 
 
 ## **Task 2: Access the Published Applications using AVD Client**
