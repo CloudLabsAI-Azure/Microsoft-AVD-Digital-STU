@@ -35,6 +35,7 @@
 In this demo, we will access the "Remote Desktop Connection" RemoteApp to connect to the Data Science Virtual Machine (DSVM).
 
 1. Open the below URL for Remote Desktop Web Client in a new browser tab on the JumpVM or your computer. 
+      
       ```
       https://aka.ms/avdwebarm
       ```
@@ -42,18 +43,13 @@ In this demo, we will access the "Remote Desktop Connection" RemoteApp to connec
 
 2. Enter the credentials as below:
 
-   - Enter the username as below and click **Next**.
-       ```
-       odl_user_840544@azurehol1182.onmicrosoft.com
-       ```   
+   - Enter the username **<inject key="AzureUserName" />** and click **Next**.   
 
-   ![ws name.](media/img10.png)
+   ![ws name.](media/img10.png)   
    
-   
-   - Enter the password <inject key="demo Admin Password" /> and click **Sign in**.
+   - Enter the password **<inject key="AzurePassword" />** and click **Sign in**.
    
    ![ws name.](media/img11.png)
-
 
    >**Note:** If there's a dialog box with *More information required*, select **Skip for now option**.
    >![ws name.](media/img3.png)
