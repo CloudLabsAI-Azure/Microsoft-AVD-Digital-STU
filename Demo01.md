@@ -98,11 +98,11 @@ In this demo, we will access a sample data that is being stored on a secured Azu
 
 1. From the DSVM, Launch the Azure Storage Explorer from the task bar as shown below:
 
-![ws name.](media/img69.png)
+   ![ws name.](media/img69.png)
 
 2. Click **Attach to a resource** once the Azure Storage Explorer is launched.
 
-![ws name.](media/img70.png)
+   ![ws name.](media/img70.png)
 
 3. On the next window, under "Select Resource", Click **Storage account or service**.
 
@@ -119,16 +119,16 @@ In this demo, we will access a sample data that is being stored on a secured Azu
       DefaultEndpointsProtocol=https;AccountName=aserstorageaccount;AccountKey=rK9u5A9a57NUMiuvxvDvnYJf+hQTO2KuVLk7AUJ1tjoB1m8hfGZ/q3d6a+n4e0JFWU+SHYhmBWVY+AStyovtKA==;EndpointSuffix=core.windows.net
       ```
 
-   ![ws name.](media/img73.png)
    
+   ![ws name.](media/img73.png)   
 
-6. Enter the credentials for *Emma.4896@AVDDemo.com* and click on **Submit**.
+6. On the next screen click on **Connect**.
 
-   ![ws name.](media/img14.png)
+   ![ws name.](media/img74.png)
 
-7. Upon successful Activation, the user can use the M365 Apps. 
+7. Once the connection is made, you will see the **aserstorageaccount (Key)** being added to the list. 
 
-   ![ws name.](media/img15.png)
+   ![ws name.](media/img75.png)
    
 ## **Task 3: Access the Published Desktops using Browser**
 
