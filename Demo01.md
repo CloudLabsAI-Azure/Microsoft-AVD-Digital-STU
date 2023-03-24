@@ -119,7 +119,7 @@ In this demo, we will access a sample data that is being stored on a secured Azu
 >**Note:** The "Display name" will automatically fill once you paste the below string.
 
       ```
-      DefaultEndpointsProtocol=https;AccountName=aserstorageaccount;AccountKey=rK9u5A9a57NUMiuvxvDvnYJf+hQTO2KuVLk7AUJ1tjoB1m8hfGZ/q3d6a+n4e0JFWU+SHYhmBWVY+AStyovtKA==;EndpointSuffix=core.windows.net
+     BlobEndpoint=https://aserstorageaccount.blob.core.windows.net/;QueueEndpoint=https://aserstorageaccount.queue.core.windows.net/;FileEndpoint=https://aserstorageaccount.file.core.windows.net/;TableEndpoint=https://aserstorageaccount.table.core.windows.net/;SharedAccessSignature=sv=2021-12-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-03-27T19:34:58Z&st=2023-03-24T11:34:58Z&spr=https&sig=P9iE%2FsgF5e73eDqZ55mUkQqwYTU%2Ft6D51Jgb6b3pAOI%3D
       ```
 
    
@@ -193,7 +193,7 @@ In this demo, we will access a sample data that is being stored on a secured Azu
 >**Note:** The "Display name" will automatically fill once you paste the below string.
 
       ```
-      DefaultEndpointsProtocol=https;AccountName=aserstorageaccount;AccountKey=rK9u5A9a57NUMiuvxvDvnYJf+hQTO2KuVLk7AUJ1tjoB1m8hfGZ/q3d6a+n4e0JFWU+SHYhmBWVY+AStyovtKA==;EndpointSuffix=core.windows.net
+     BlobEndpoint=https://aserstorageaccount.blob.core.windows.net/;QueueEndpoint=https://aserstorageaccount.queue.core.windows.net/;FileEndpoint=https://aserstorageaccount.file.core.windows.net/;TableEndpoint=https://aserstorageaccount.table.core.windows.net/;SharedAccessSignature=sv=2021-12-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-03-27T19:34:58Z&st=2023-03-24T11:34:58Z&spr=https&sig=P9iE%2FsgF5e73eDqZ55mUkQqwYTU%2Ft6D51Jgb6b3pAOI%3D
       ```
 
    
