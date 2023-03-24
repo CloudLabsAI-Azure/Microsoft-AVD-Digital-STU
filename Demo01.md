@@ -1,5 +1,4 @@
-# **Getting Started**
-
+# **User Guide: The Secure Research Environment**
 
 1. Once you launch the lab, a virtual machine (JumpVM) on the left and lab guide on the right will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.	
 
@@ -7,283 +6,211 @@
 
 2. You will have the **Environment Details** tab located next to the *Lab Guide* tab that will provide you details such as Username, Password for your user.
 
-   ![](media/gs02.png)	
-   
-3. Next to _Environment Details_ tab you will have **Resources** tab which will display the status of all the Virtual Machines available in your environment. 
+   ![](media/gs02.png)
 
-   ![](media/gs05.png)	
-
-4. You will also have a set of **Actions** to control the Virtual Machines. The _Actions_ are as follows:
-	
-	* **Start:** Use this button to _Start_ a virtual machine.
-	* **Restart:** Use this button to _Restart_ a virtual machine.
-	* **Stop:** Use this button to _Deallocate_ a virtual machine.
-   
-   
-   ![](media/gs03.png)	
  
- 5. At last, you will have **Help** tab in which we have listed known issues such as Unable to copy paste, Need credentials and much more. In case if you face any of these issues, you can troubleshoot it by following the instructions given there.
+3. You will also have **Help** tab in which we have listed known issues such as Unable to copy paste, Need credentials and much more. In case if you face any of these issues, you can troubleshoot it by following the instructions given there.
  
 
-   	![](media/gs04.png)
-   
-
-### **Below are the files you'll need to get started with your session:**
-
-**- ["Avddemo.com.vsdx" visio file can be downloaded from here](https://github.com/Eddevinc/AVD-STU-DEMO/raw/main/media/AVDDemo.com.vsdx)**
-
-**- ["Azure Virtual Desktop.pptx" powerpoint file can be downloaded from here](https://github.com/Eddevinc/AVD-STU-DEMO/raw/main/media/Azure%20Virtual%20Desktop.pptx)**
+   ![](media/gs04.png)
 
 
+**What is the Azure Secure Enclave for Research?**
 
-# **Demo 1: AVD Login experience**
+The Secure Enclave for Research (also known as the Secure Research Enclave) is a reference architecture for a remotely-accessible environment for researchers to use in a secure manner while working on restricted data sets. The solution features robust mechanisms for control over user access to the environment and also over movement of data in or out of scope for analysis so it is ideal for working with restricted data sets. Data in the environment can be analyzed with traditional VMs using Windows or Linux with well-known tools such as R Studio and also supports the use of advanced analytical tools such as Azure Machine Learning.
+
+The solution is built using multiple Azure services including Azure Virtual Desktop to provide strong control over data movement into and out of the environment in order to prevent unauthorized exfiltraction of data sets.
+
+In this Demo Lab we are going to work with a smaple Secure Research Environment and go over the deployment configurations used in this Lab.
+
+Before we begin, Lets go over the architecture of this Demo Lab.
+
+This architecture shows a secure research environment intended to allow researchers to access sensitive data under a higher level of control and data protection. This article is applicable for organizations that are bound by regulatory compliance or other strict security requirements.
+
+![ws name.](media/img119.png)
 
 
-## **Task 1: Access the Published Applications using Browser**
+# **Demo 1: Accessing secure data from the DSVM through Azure Virtual Desktop**
 
-In this demo, we will access the Desktop and RemoteApps assigned to an end user using a browser.
+## **Task 1: Access the Published DSVM Remote Desktop using Browser**
 
-
-**Talk through tip:**
-   **Mention to the audience:**
- - The user is signing in for the first time.  
- - All the user’s starting with **‘E’** in their first name belongs to **East US** region. 
- - All the user’s starting with **‘C’** in their first name belongs to **Central US** region.
- - All the users are licensed with M365 License
- - All the users have their password set to: <inject key="demo Admin Password" />
+In this demo, we will access the "Remote Desktop Connection" RemoteApp to connect to the Data Science Virtual Machine (DSVM).
 
 1. Open the below URL for Remote Desktop Web Client in a new browser tab on the JumpVM or your computer. 
+      
       ```
-      https://aka.ms/wvdarmweb
+      https://aka.ms/avdwebarm
       ```
 
-   >**Note:** If you are already logged in as the end user, jump to *step 3*.
 
 2. Enter the credentials as below:
 
-   - Enter the username as below and click **Next**.
-       ```
-       Emma.4896@AVDDemo.com
-       ```   
+   - Enter the username **<inject key="azureaduseremail" />** and click **Next**.   
 
-   ![ws name.](media/img10.png)
+   ![ws name.](media/img10.png)   
    
-   
-   - Enter the password <inject key="demo Admin Password" /> and click **Sign in**.
+   - Enter the password **<inject key="azureaduserpassword" />** and click **Sign in**.
    
    ![ws name.](media/img11.png)
-
 
    >**Note:** If there's a dialog box with *More information required*, select **Skip for now option**.
    >![ws name.](media/img3.png)
 
->**Talk through tip:**
-> Mention to the audience that the AVD environment is configured to enforce MFA, but for the demo purposes we have allowed the option to Skip the MFA setup for maximum of 14 days.
 
-
-3. The RemoteApps and the Workspace published to the logged in user will show up, click on **Excel** application to access it.
+3. The RemoteApps and the Workspace published to the logged in user will show up, click on **Remote Desktop Connection** application to access it.
+   This will launch a Remote Desktop Connection Client that we will use to remotely connect to the Data Science Virtual Machine (DSVM).
 
    ![ws name.](media/img4.png)
-   
+      
 4. Select **Allow** on the prompt asking permission to *Access local resources*.
 
    ![ws name.](media/img5.png)
    
-5. Enter the credentials for **Emma.4896@AVDDemo.com** and click on **Submit**.
+5. Enter the credentials.
+
+   - Enter the username **<inject key="azureaduseremail" />**
+   - Enter the password **<inject key="azureaduserpassword" />** and click **Submit**
 
    ![ws name.](media/img6.png)
 
-6. Once signed in, the M365 App will open. The App will be auto activated and Auto logged in using SSO.
+6. On the next pop-up, Enter the credentials again and select the check box next to **Remember me**. This will avoid any future prompts.
 
-   ![ws name.](media/img8.png)
+   - Enter the password **<inject key="azureaduserpassword" />**
 
->**Talk through tip:**
->The first login does SSO in M365 App which also Activates M365 Apps based on the User License.
->On the above screen, if you notice the top right hand side corner; the user is already logged in using SSO.
+   ![ws name.](media/img66.png)
 
+7. On the next pop-up, select the check box next to **Don't ask me again for connections to this computer** and Click **Yes**. This will avoid any future prompts.
 
+   ![ws name.](media/img67.png)
 
-## **Task 2: Access the Published Applications using AVD Client**
+8. Once signed in, the Remote Desktop Client will open. You are now connected to the Desktop of the DSVM.
 
-In this demo, we will access the Desktop and RemoteApps assigned to an end user using a AVD Client.
+   ![ws name.](media/img68.png)
 
-
-1. Download and Install the AVD Client on your JumpVM; use below URL:
-
-```
-https://go.microsoft.com/fwlink/?linkid=2068602
-```
-
-2. Launch AVD Client on your JumpVM.
-
->**Note:** If you are already logged in as the end user, jump to *step 3*.
-
-3. In AVD desktop client click on **Subscribe**.
-
-   ![ws name.](media/img9.png)
-
-4. Enter the credentials as below:
-
-   - Enter the username as below and click **Next**.
-       ```
-       Emma.4896@AVDDemo.com
-       ```
-   
-
-   ![ws name.](media/img10.png)
-   
-   
-   - Enter the password <inject key="demo Admin Password" /> and click **Sign in**.
-   
-
-   ![ws name.](media/img11.png)
+>**More Information:**
+>In this task, you have accessed the Remote Desktop Client which is being hosted from the Azure Virtual Desktop.
+>The Remote Desktop Client is then further connected to the DSVM, which is hosted as an independant VM on a seperate protected Virtual Network in Azure.
+>Azure Virtual Desktop in this case is acting as a Jump box to get into the DSVM.
+>We are going to use this DSVM to access the tools and data is only accessible from this secured VM.
 
 
->**Note:** If there's a dialog box with *More information required*, select **Skip for now option**.
->![ws name.](media/img3.png)
->
+## **Task 2: Access the Sample data from restricted Azure Storage Account**
 
-5. The RemoteApps and the Workspace published to the logged in user will show up, click on **Excel** application to access it.
+In this demo, we will access a sample data that is being stored on a secured Azure storage account. We will be using Azure Storage Explorer that is already installed on the DSVM.
 
-   ![ws name.](media/img13.png)
-   
 
-6. Enter the credentials for *Emma.4896@AVDDemo.com* and click on **Submit**.
+1. From the DSVM, Launch the Azure Storage Explorer from the task bar as shown below:
 
-   ![ws name.](media/img14.png)
+   ![ws name.](media/img69.png)
 
-7. Upon successful Activation, the user can use the M365 Apps. 
+2. Click **Attach to a resource** once the Azure Storage Explorer is launched.
 
-   ![ws name.](media/img15.png)
-   
-## **Task 3: Access the Published Desktops using Browser**
+   ![ws name.](media/img70.png)
 
-In this demo, we will access the Desktop assigned to an end user using a browser.
+3. On the next window, under "Select Resource", Click **Storage account or service**.
 
-1. Open the below URL for Remote Desktop Web Client in a new browser tab on the JumpVM or your computer. 
+   ![ws name.](media/img71.png)
+
+4. On the next window, under "How will you connect to the storage account?", Select **Connection string (Key or SAS)** and click **Next**.
+
+   ![ws name.](media/img72.png)
+
+5. On the next window, under "Connection string", copy and paste the below string and click **Next**.
+>**Note:** The "Display name" will automatically fill once you paste the below string.
+
       ```
-      https://aka.ms/wvdarmweb
+     BlobEndpoint=https://aserstorageaccount.blob.core.windows.net/;QueueEndpoint=https://aserstorageaccount.queue.core.windows.net/;FileEndpoint=https://aserstorageaccount.file.core.windows.net/;TableEndpoint=https://aserstorageaccount.table.core.windows.net/;SharedAccessSignature=sv=2021-12-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-03-27T19:34:58Z&st=2023-03-24T11:34:58Z&spr=https&sig=P9iE%2FsgF5e73eDqZ55mUkQqwYTU%2Ft6D51Jgb6b3pAOI%3D
       ```
 
->**Note:** If you are already logged in as the end user, jump to *step 3*.
-
-2. Enter the credentials as below:
-
-   - Enter the username as below and click **Next**.
-       ```
-       Camilia.4896@AVDDemo.com
-       ```   
-
-   ![ws name.](media/img16.png)
    
-   
-   - Enter the password <inject key="demo Admin Password" /> and click **Sign in**.
-   
-   ![ws name.](media/img17.png)
+   ![ws name.](media/img73.png)   
 
-3. The RemoteApps and the Desktops published to the logged in user will show up, click on **SessionDesktop**.
+6. On the next screen click on **Connect**.
 
-   ![ws name.](media/img18.png)
-   
-4. Select **Allow** on the prompt asking permission to *Access local resources*.
+   ![ws name.](media/img74.png)
 
-   ![ws name.](media/img5.png)
-   
-5. Enter the credentials for **Camilia.4896@AVDDemo.com** and click on **Submit**.
+7. Once the connection is made, you will see the **aserstorageaccount (Key)** being added to the list. 
 
-   ![ws name.](media/img19.png)
+   ![ws name.](media/img75.png)
 
-6. Once signed in, the Full Desktop session will be presented to the user through the Browser.
+8. You can now expand the **aserstorageaccount** > **Blob Containers** > **aserdata** and Download the sample data by clicking on the **Download All...** as shown in the screenshot   below. You can save the data anywhere on the C: drive. 
 
-   ![ws name.](media/img20.png)
+   ![ws name.](media/img76.png)
 
-## **Task 4: Access the Published Desktops using AVD Client**
+>**More Information:**
+>In this task, you have accessed the sample data which can be downloaded locally to perform any actions for research.
+>There are no further steps required.
+>Next, we will try to access this same data from anyother VM which should result in an inability to access the data because the data is only supposed to be accessible from the DSVM and no where else.
 
-In this demo, we will access the Desktop assigned to an end user using an AVD Client app.
+## **Task 3: Try to access the Sample data from Azure Virtual Desktop (non-DSVM negative test)**
 
-1. Launch AVD Client on your JumpVM.
+1. Navigate back to the Azure Virtual Desktop web client. Click on **All Resources** and launch **Session Desktop** as shown in the screenshot below:
 
->**Note:** The AVD Client must be already logged in during the previous demo login; follow below steps to login using multiple accounts.
+   ![ws name.](media/img77.png)
 
-2. In AVD desktop client click on **Subscribe with URL**.
+>**More Information:**
+>This will launch a Remote Desktop Connection to the Azure Virtual Desktop which is a different VM than the DSVM.
+>Azure Virtual Desktop is connected to a seperate Virtual Network.
 
-   ![ws name.](media/img21.png)
+2. Click **Allow**
 
-3. - Enter the below feed URL and click **Next**.
-       ```
-       https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery
-       ```   
+   ![ws name.](media/img78.png)
 
-   ![ws name.](media/img23.png)
+3. Enter the credentials.
 
-4. - Enter the username as below and click **Next**.
-       ```
-       Eva.4896@AVDDemo.com
-       ```   
-   
-   - Enter the password <inject key="demo Admin Password" /> and click **Sign in**.
+   - Enter the username **<inject key="azureaduseremail" />**
+   - Enter the password **<inject key="azureaduserpassword" />** and click **Submit**
 
-5. The RemoteApps, along with the Session Desktops published to the logged in user will show up, click on **SessionDesktop**.
+   ![ws name.](media/img79.png)
 
-   ![ws name.](media/img24.png)
-   
+4. On the next pop-up, Enter the credentials again and select the check box next to **Remember me**. This will avoid any future prompts.
 
-6. Enter the credentials for *Eva.4896@AVDDemo.com* and click on **OK**.
+   - Enter the password **<inject key="azureaduserpassword" />**
 
-7. Once signed in, the Full Desktop session will be presented to the user. 
+   ![ws name.](media/img66.png)
 
-   ![ws name.](media/img25.png)
+5. Once signed in, the Desktop of the Azure Virtual Desktop's Session host will open. You are now connected to the Desktop of the AVD.
 
->**Talk through tip:**
+   ![ws name.](media/img80.png)
 
->**RDP Ports**
-   - Talk about how the client uses HTTPS (outbound) for all the Remote Desktop experience.
-   - Explain the NO need of any INBOUND Network Ports.
+6. Now click on the **START** button and search for **Microsoft Azure Storage Explorer**. Launch the Azure Storage Explorer.
 
-   ![ws name.](media/img26.png)
+   ![ws name.](media/img81.png)
 
+7. Click **Attach to a resource** once the Azure Storage Explorer is launched.
 
-8. In JumpVM launch Edge browser and navigate to Azure Portal using following URL.
-     
-     ```
-     https://portal.azure.com
-     ```
-				
-9. Sign in into the portal using the below credentials.
+   ![ws name.](media/img70.png)
 
-  - Username: AVDPresentor01@AVDDemo.com
-  - Password: **<inject key="Demo Admin Password" />**
+8. On the next window, under "Select Resource", Click **Storage account or service**.
 
-  ![ws name.](media/demo201.png)
+   ![ws name.](media/img71.png)
 
->**Note:** On the following prompt, click on **Skip for now**
->
->![ws name.](media/demo202.png)
->
+9. On the next window, under "How will you connect to the storage account?", Select **Connection string (Key or SAS)** and click **Next**.
 
-   - Showcase how there are no Public IP Addresses assigned to the VMs running as Session Hosts in AVD.
+   ![ws name.](media/img72.png)
+
+10. On the next window, under "Connection string", copy and paste the below string and click **Next**.
+>**Note:** The "Display name" will automatically fill once you paste the below string.
+
+      ```
+     BlobEndpoint=https://aserstorageaccount.blob.core.windows.net/;QueueEndpoint=https://aserstorageaccount.queue.core.windows.net/;FileEndpoint=https://aserstorageaccount.file.core.windows.net/;TableEndpoint=https://aserstorageaccount.table.core.windows.net/;SharedAccessSignature=sv=2021-12-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-03-27T19:34:58Z&st=2023-03-24T11:34:58Z&spr=https&sig=P9iE%2FsgF5e73eDqZ55mUkQqwYTU%2Ft6D51Jgb6b3pAOI%3D
+      ```
 
    
+   ![ws name.](media/img73.png)   
 
-   ![ws name.](media/img27.png)
+11. On the next screen click on **Connect**.
 
-   - Showcase the NSG's on the NICs of the AVD VMs which shows no Inbound ports for RDP or RDGW.
+   ![ws name.](media/img74.png)
 
-   ![ws name.](media/img28.png)
+12. Now you will see the **aserstorageaccount (Key)** being added to the list. 
 
->**FSLogix Profiles**
-   - The AVD User profiles are being stored in an Azure File Share.
-   - We are using FSLogix Container settings to map the User Profiles to Azure Files.
-   - East User's profiles are stored in East region and Central User's profiles are stored in Central region.
-   - Profiles can be shown from Azure Files using Azure Portal
+   ![ws name.](media/img75.png)
 
-      - Open any one of the Azure Storage Account in Azure Portal and navigate to **Networking**
-      - Add the Public IP to allow list so that the contents of the Azure Files can be accessed from the Portal.
+13. You can now expand the **aserstorageaccount** > **Blob Containers**. However you will notice that the connection is denied. 
 
-      >**Note:** Azure Files are configured to allow access only from AVD Subnets; hence, to be able to access the Azure Files from Azure Portal, the Public IP that is being used to connect to the Azure Portal needs to be whitelisted.
+   ![ws name.](media/img82.png)
 
-      ![ws name.](media/img29.png)
-
-      - Click on **File Shares** and then **upd**; here you will see the User Profiles created for our previous Demo User's Logins.
-
-      ![ws name.](media/img30.png)
+>**More Information:**
+>In this task, you tried to access the same sample data that was accessible from the DSVM / DSVM Virtual Network, However because of the restrictions on the Azure Virtual Network, the access was denied.
+>This validates that access to the secure data can be restricted to a specific Virtual Network or a specific VM.

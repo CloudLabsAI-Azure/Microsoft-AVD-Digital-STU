@@ -1,139 +1,90 @@
-# **Demo 2: How to create Host Pools (Walkthrough only)**
+# **Demo 2: Accessing Azure Portal from DSVM**
 
 
-## **Task 1: Adding Host Pools**
+## **Task 1: Access the Azure Portal from DSVM**
 
-1. In JumpVM launch Edge browser and navigate to Azure Portal using following URL.     
+>**More Information:**
+>In this task, We will first access the Azure Management Portal from the DSVM. Using the Azure Active Directory Conditional access policy, the access to the Azure portal is only allowed from the DSVM.
+>Later we will try to access the same Azure Portal from the AVD Session Host and find that it is being blocked.
+
+1. Connect to the Desktop of the DSVM if not already connected.
+
+2. Launch Edge browser and navigate to Azure Portal using following URL. You can either use the Shortcut on the desktop or the Edge icon on the taskbar:     
 ```
 https://portal.azure.com
-```				
-2. Sign in into the portal using the below credentials.
-- Username:
 ```
-AVDPresentor01@AVDDemo.com
+
+![ws name.](media/img83.png)				
+
+3. Sign in into the portal using the below credentials.
+
+   - Enter the username **<inject key="azureaduseremail" />** and click **Next**.   
+
+![ws name.](media/img84.png)	
+
+   - Enter the password **<inject key="azureaduserpassword" />** and click **Sign in**.
+
+![ws name.](media/img85.png)
+
+4. Select **Skip for now (14 days until this is required)**.
+
+![ws name.](media/img86.png)
+
+5. You will now be logged into the Azure Management Portal.
+
+>**More Information:**
+>This validates that we can access the Azure Portal from the DSVM.
+>We will return to the Azure Management Portal later for reviewing the Azure Deployments.
+> Next, we will try to access the same Azure Portal from the AVD Session Host.
+
+## **Task 2: Access the Azure Portal from AVD Session Host**
+
+1. If you are not connected to the AVD Sessionhost, Navigate back to the Azure Virtual Desktop web client. Click on **All Resources** and launch **Session Desktop** as shown in the screenshot below:
+
+   ![ws name.](media/img77.png)
+
+>**More Information:**
+>This will launch a Remote Desktop Connection to the Azure Virtual Desktop which is a different VM than the DSVM.
+>Azure Virtual Desktop is connected to a seperate Virtual Network.
+
+2. Click **Allow**
+
+   ![ws name.](media/img78.png)
+
+3. Enter the credentials.
+
+   - Enter the password **<inject key="azureaduserpassword" />** and click **Submit**
+
+   ![ws name.](media/img79.png)
+
+4. On the next pop-up, Enter the credentials again and select the check box next to **Remember me**. This will avoid any future prompts.
+
+   - Enter the password **<inject key="azureaduserpassword" />** and click **OK**
+   
+   ![ws name.](media/img66.png)
+
+5. Once signed in, the Desktop of the Azure Virtual Desktop's Session host will open. You are now connected to the Desktop of the AVD.
+
+   ![ws name.](media/img80.png)
+
+6. Launch Microsoft Edge
+
+   ![ws name.](media/img88.png)
+
+7. Navigate to Azure Portal using following URL.
 ```
-- Password: **<inject key="Demo Admin Password" />**
+https://portal.azure.com
+```
 
-![ws name.](media/demo201.png)
+8. Try to sign in into the portal using the below credentials.
 
->**Note:** If you are asked for MFA, Scan the below QR Code on your phone's Authenticator App and use the 6 digit code for MFA Authentication.
->
-![ws name.](media/qr.png)
->
+   - Enter the username **<inject key="azureaduseremail" />**
+   - Enter the password **<inject key="azureaduserpassword" />**
 
-3. In Azure portal search for *Azure Virtual Desktop* and click on the search result.
+9. Now you will notice that the Sign in was succesfull, However, due to the Conditional Access Policies in place, the Azure Portal will not launch.
 
-![ws name.](media/demo203.png)
-					
-4. Click on **Create a host pool**.
+![ws name.](media/img89.png)
 
-![ws name.](media/demo204.png)
-
-5. In this step, we will provide the details required to create a Host Pool. For your convenience, this step is divided into two sections as follows:
-
-![ws name.](media/demo205.png)
-
- **Project Details – (A)** Defines the Host Pool environment 
-
-   - Subscription: *Choose the default subscription*.
-   - Resource Group: *Select the Resource Group from the drop down*.
-   - Host Pool Name: *Provide a name for the host pool*
-   - Location: *Select the region in which we want to deploy the host pool*
-   - Validation environmet: **No**
-      
-   >**Note:** Validation host pools let you monitor service updates before rolling them out to your production environment.
-            
- **Host Pool Type – (B)** Defines the type of host pool. 
-
-   - Host pool type: **Pooled** 
-        
-> **Note:** Host Pools are of 2 types: Pooled and Personal.  
->  - **Pooled**, where session hosts can accept connections from any user authorized to an app group within the host pool.
->  - **Personal**, where each session host is assigned to individual users.
-     
-   - Load Balancing Algorithm: **Breadth First**
-   
-> **Note:** Load Balancing Algorithm is of two types: *Breadth-first* and *Depth-first*. 
->  - **Breadth-first** load balancing allows you to evenly distribute user sessions across the session hosts in a host pool. 
->  - **Depth-first** load balancing allows you to saturate a session host with user sessions in a host pool. 
-
-   - Max session Limit: **5**   
-      
-> **Note:** Max session Limit limits the simultaneous number of users on the same session host.
-   
-   - Then click on **Next:Virtual Machines**.
-   
-6. In the Virtual machines tab, select **Yes** against **Add virtual machines**. By doing this, we are stepping towards adding Virtual machines to the host pool. 
-
-![ws name.](media/demo206.png)
-
-7. In this step, we will provide the details of the VMs to be created as session Hosts. For your convenience, this step is divided into three sections as follows:
-
-![ws name.](media/demo209.png)
-
-  **A**. Session Host Specifications:     
-
-   - Resource Group: *Select Resource Group from the drop down*.
-   - Name prefix: _Provide an appropriate prefix for the Virtual Machine Name_
-   - Virtual machine location: _Select the region in which we want to create our session hosts._
-   - Availability options: _Select_ **No infrastructure redundancy required** _from the drop down_.
-   - Image type: **Gallery**
-   - Image: **Windows 10 Enterprise multi-session, version 20H2 (GEN 2)** *(choose from dropdown)*
-   - Virtual machine size: **Standard D4s_v3**. *Click on **Change Size**, then select **D4s_v3** and click on **Select** as shown below*
-
-![ws name.](media/demo207.png)
-
-   - Number of VMs: **2**
-   - OS disk type: **Standard SSD**
-   - Use managed disks: *Leave to default*
-   - Boot Diagnostics: **Disable**
-
-  **B**. Network and Security:
-
-![ws name.](media/demo210.png)
-    
-   Leave all values to default, except:
-    
-   - Virtual network: *Select the Virtual Network (choose from dropdown)*
-   - Subnet: _Select the subnet for Virtual Machines (choose from dropdown)_
-   - Specify Domain or Unit: **Yes**
-   - Domain to join: **avddemo.com**
-   - Organizational Unit path: **OU=EastUS,OU=AVD,OU=Computers,OU=AVDDemo,DC=AVDDemo,DC=com**
-
-   
-  **C**. Domain Administrator Account:
-  
-![ws name.](media/demo211.png)
-  
-   - AD domain join UPN: **AVDPresentor01@AVDDemo.com**
-   - Password: *Paste the password* **<inject key="Demo Admin Password" />**
-
-  **D**. Virtual Machine Administrator Account:
-
-![ws name.](media/demo214.png)
-  
-   - Username: **hostadmin**
-   - Password: *Paste the password* **<inject key="Demo Admin Password" />**
-   - Confirm Password: *Paste the password* **<inject key="Demo Admin Password" />** *again.*
-   - Click on **Next: Workspace** to proceed. 
-
-8. In the Workspace section, we need to specify if we need to register the default application group to a workspace. 
-
-   - Register desktop app group: *Choose* **Yes** 
-   - To this workspace: *Click on* **Create new**
-
-![ws name.](media/demo213.png)
-   
-9. Once you click on **Create new**, a small window pops up, where you can specify the Workspace name you are going to create.  
-
-   - Workspace name: OfficeEastUS 
-   - Click on **OK**
-     
-![ws name.](media/demo212.png) 
-
-10. Now click on **Review + create** on the bottom left corner. 
-
-    
->**Note:** The last window helps us to verify if the parameters we filled are correct.
-
-11. Click on **Cancel** to cancel the deployment.
+>**More Information:**
+>This validates that the Azure Portal can only be accessed when the connection is initiated from the designated DSVM.
+>Next, lets check the Azure deployments to understand the architecture of this Lab setup.

@@ -1,60 +1,30 @@
 [
   {
-    "Name": "Microsoft AVD Demo Lab",
+    "Name": "The Azure Secure Enclave for Research",
     "Language": "English",
     "Files": [
 	    {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo01.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/aser/Demo01.md",
         "Order": 1
       },
   {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo02.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/aser/Demo02.md",
         "Order": 2
       },
   {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo03.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/aser/Demo03.md",
         "Order": 3
       },
   {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo04.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/aser/Demo04.md",
         "Order": 4
       },
   {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo05.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/aser/Demo05.md",
         "Order": 5
-      },
-  {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo06.md",
-        "Order": 6
-      },
-  {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo07.md",
-        "Order": 7
-      },
-  {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo08.md",
-        "Order": 8
-      },
-  {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo09.md",
-        "Order": 9
-      },
-  {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo10.md",
-        "Order": 10
-      },
-  {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo11.md",
-        "Order": 11
-      },
-  {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo12.md",
-        "Order": 12
-      },
-  {
-            "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-AVD-Digital-STU/main/Demo13.md",
-            "Order": 13
       }
+  
+  
 ]
   }
   

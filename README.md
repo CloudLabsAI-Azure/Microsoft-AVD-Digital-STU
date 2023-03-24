@@ -1,1 +1,1 @@
-# Microsoft-AVD-Digital-STU
+# Secure Research Environment
