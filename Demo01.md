@@ -53,14 +53,19 @@ In this demo, we will access the "Remote Desktop Connection" RemoteApp to connec
    
    ![ws name.](media/img11.png)
 
-   >**Note:** If there's a dialog box with *More information required*, select **Skip for now option**.
-   >![ws name.](media/img3.png)
+   - If you see the pop-up Action Required, keep default and then click on Ask later. If you see the pop-up Help us protect your account, click on Skip for now(14 days until this is required), and then click on Next.
+   >**Note:** ou may see this pop-up multiple times, please proceed to click on **Ask Later**
+   >![ws name.](media/01.png)
+   
+   - First-time users are often prompted to Stay Signed In, if you see this pop-up, click on No.
+   
+   ![ws name.](media/02.png)
 
 
 3. The RemoteApps and the Workspace published to the logged in user will show up, click on **Remote Desktop Connection** application to access it.
    This will launch a Remote Desktop Connection Client that we will use to remotely connect to the Data Science Virtual Machine (DSVM).
 
-   ![ws name.](media/img4.png)
+   ![ws name.](media/03.png)
       
 4. Select **Allow** on the prompt asking permission to *Access local resources*.
 
@@ -135,47 +140,22 @@ In this demo, we will access a sample data that is being stored on a secured Azu
 
 8. You can now expand the **aserstorageaccount** > **Blob Containers** > **aserdata** and Download the sample data by clicking on the **Download All...** as shown in the screenshot   below. You can save the data anywhere on the C: drive. 
 
-   ![ws name.](media/img76.png)
+   ![ws name.](media/10.png)
 
 >**More Information:**
 >In this task, you have accessed the sample data which can be downloaded locally to perform any actions for research.
 >There are no further steps required.
 >Next, we will try to access this same data from anyother VM which should result in an inability to access the data because the data is only supposed to be accessible from the DSVM and no where else.
 
-## **Task 3: Try to access the Sample data from Azure Virtual Desktop (non-DSVM negative test)**
+## **Task 3: Try to access the Sample data from VM (non-DSVM negative test)**
 
-1. Navigate back to the Azure Virtual Desktop web client. Click on **All Resources** and launch **Session Desktop** as shown in the screenshot below:
+1. Minimize the web browser in the VM as shown below:
 
-   ![ws name.](media/img77.png)
+   ![ws name.](media/04.png)
 
->**More Information:**
->This will launch a Remote Desktop Connection to the Azure Virtual Desktop which is a different VM than the DSVM.
->Azure Virtual Desktop is connected to a seperate Virtual Network.
+2. Now click on the **Search Icon** and search for **Microsoft Azure Storage Explorer**. Launch the Azure Storage Explorer.
 
-2. Click **Allow**
-
-   ![ws name.](media/img78.png)
-
-3. Enter the credentials.
-
-   - Enter the username **<inject key="azureaduseremail" />**
-   - Enter the password **<inject key="azureaduserpassword" />** and click **Submit**
-
-   ![ws name.](media/img79.png)
-
-4. On the next pop-up, Enter the credentials again and select the check box next to **Remember me**. This will avoid any future prompts.
-
-   - Enter the password **<inject key="azureaduserpassword" />**
-
-   ![ws name.](media/img66.png)
-
-5. Once signed in, the Desktop of the Azure Virtual Desktop's Session host will open. You are now connected to the Desktop of the AVD.
-
-   ![ws name.](media/img80.png)
-
-6. Now click on the **START** button and search for **Microsoft Azure Storage Explorer**. Launch the Azure Storage Explorer.
-
-   ![ws name.](media/img81.png)
+   ![ws name.](media/05.png)
 
 7. Click **Attach to a resource** once the Azure Storage Explorer is launched.
 
