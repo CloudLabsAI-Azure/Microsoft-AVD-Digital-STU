@@ -119,7 +119,7 @@ In this demo, we will access a sample data that is being stored on a secured Azu
 >**Note:** The "Display name" will automatically fill once you paste the below string.
 
       ```
-     BlobEndpoint=https://aserstorageaccount.blob.core.windows.net/;QueueEndpoint=https://aserstorageaccount.queue.core.windows.net/;FileEndpoint=https://aserstorageaccount.file.core.windows.net/;TableEndpoint=https://aserstorageaccount.table.core.windows.net/;SharedAccessSignature=sv=2021-12-02&ss=bfqt&srt=sc&sp=rwdlacupiytfx&se=2023-04-07T23:51:31Z&st=2023-04-05T15:51:31Z&spr=https&sig=bJ2WvNkc9OclaB%2FRxBdqScmhoDaBx8CqP3wpoGn%2B0VY%3D
+     BlobEndpoint=https://aserstorageaccount.blob.core.windows.net/;QueueEndpoint=https://aserstorageaccount.queue.core.windows.net/;FileEndpoint=https://aserstorageaccount.file.core.windows.net/;TableEndpoint=https://aserstorageaccount.table.core.windows.net/;SharedAccessSignature=sv=2021-12-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-04-07T19:40:47Z&st=2023-04-06T11:40:47Z&spr=https&sig=kSccKTasvYMWWUi52qXa0tJMiTXjFwim8l0Wzzfiqlc%3D
       ```
 
    
@@ -193,7 +193,7 @@ In this demo, we will access a sample data that is being stored on a secured Azu
 >**Note:** The "Display name" will automatically fill once you paste the below string.
 
       ```
-     BlobEndpoint=https://aserstorageaccount.blob.core.windows.net/;QueueEndpoint=https://aserstorageaccount.queue.core.windows.net/;FileEndpoint=https://aserstorageaccount.file.core.windows.net/;TableEndpoint=https://aserstorageaccount.table.core.windows.net/;SharedAccessSignature=sv=2021-12-02&ss=bfqt&srt=sc&sp=rwdlacupiytfx&se=2023-04-07T23:51:31Z&st=2023-04-05T15:51:31Z&spr=https&sig=bJ2WvNkc9OclaB%2FRxBdqScmhoDaBx8CqP3wpoGn%2B0VY%3D
+     BlobEndpoint=https://aserstorageaccount.blob.core.windows.net/;QueueEndpoint=https://aserstorageaccount.queue.core.windows.net/;FileEndpoint=https://aserstorageaccount.file.core.windows.net/;TableEndpoint=https://aserstorageaccount.table.core.windows.net/;SharedAccessSignature=sv=2021-12-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-04-07T19:40:47Z&st=2023-04-06T11:40:47Z&spr=https&sig=kSccKTasvYMWWUi52qXa0tJMiTXjFwim8l0Wzzfiqlc%3D
       ```
 
    
