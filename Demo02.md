@@ -59,7 +59,7 @@ https://portal.azure.com
 
 4. Now you will notice that the Sign in was succesfull, However, due to the Conditional Access Policies in place, the Azure Portal will not launch.
 
-![ws name.](media/img89.png)
+![ws name.](media/11.png)
 
 >**More Information:**
 >This validates that the Azure Portal can only be accessed when the connection is initiated from the designated DSVM.
