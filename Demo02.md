@@ -14,26 +14,26 @@
 https://portal.azure.com
 ```
 
-![ws name.](media/img83.png)				
+   ![ws name.](media/img83.png)				
 
 3. Sign in into the portal using the below credentials.
 
    - Enter the username **<inject key="azureaduseremail" />** and click **Next**.   
 
-![ws name.](media/img84.png)	
+   ![ws name.](media/img84.png)	
 
    - Enter the password **<inject key="azureaduserpassword" />** and click **Sign in**.
 
-![ws name.](media/img85.png)
+   ![ws name.](media/img85.png)
 
 4. If you see the pop-up Action Required, keep default and then click on Ask later. If you see the pop-up Help us protect your account, click on Skip for now(14 days until this is required), and then click on Next.
 **Note:** You may see this pop-up multiple times, please proceed to click on Ask Later
 
-![ws name.](media/01.png)
+   ![ws name.](media/01.png)
 
 5. First-time users are often prompted to Stay Signed In, if you see this pop-up, click on No.
 
-![ws name.](media/02.png)
+   ![ws name.](media/02.png)
 
 6. You will now be logged into the Azure Management Portal.
 
@@ -59,7 +59,7 @@ https://portal.azure.com
 
 4. Now you will notice that the Sign in was succesfull, However, due to the Conditional Access Policies in place, the Azure Portal will not launch.
 
-![ws name.](media/11.png)
+   ![ws name.](media/11.png)
 
 >**More Information:**
 >This validates that the Azure Portal can only be accessed when the connection is initiated from the designated DSVM.
