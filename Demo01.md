@@ -54,7 +54,7 @@ In this demo, we will access the "Remote Desktop Connection" RemoteApp to connec
    ![ws name.](media/img11.png)
 
    - If you see the pop-up Action Required, keep default and then click on Ask later. If you see the pop-up Help us protect your account, click on Skip for now(14 days until this is required), and then click on Next.
-   >**Note:** ou may see this pop-up multiple times, please proceed to click on **Ask Later**
+   >**Note:** You may see this pop-up multiple times, please proceed to click on **Ask Later**
    >![ws name.](media/01.png)
    
    - First-time users are often prompted to Stay Signed In, if you see this pop-up, click on No.
