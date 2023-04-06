@@ -10,9 +10,9 @@
 1. Connect to the Desktop of the DSVM if not already connected.
 
 2. Launch Edge browser and navigate to Azure Portal using following URL. You can either use the Shortcut on the desktop or the Edge icon on the taskbar:     
-```
-https://portal.azure.com
-```
+   ```
+   https://portal.azure.com
+   ```
 
    ![ws name.](media/img83.png)				
 
